@@ -50,6 +50,7 @@ const projects = [
     ],
     notion:
       "https://www.notion.so/Lacheln-35e89e537d9080a8899dea6a0b08486d?source=copy_link",
+     erd: "https://www.erdcloud.com/d/6ARb2m88fqgQ6Zei9",
   },
   {
     name: "My WorkOut",
@@ -71,6 +72,7 @@ const projects = [
     ],
     notion:
       "https://www.notion.so/My-WorkOut-36489e537d9080129301e4093eb36478?source=copy_link",
+     erd: "https://www.erdcloud.com/d/mb5CQvHpezvajcmN9",
   },
   {
     name: "Gatherly",
@@ -94,6 +96,7 @@ const projects = [
     frontend: "https://github.com/shahid11-01/Gatherly-client",
     notion:
       "https://app.notion.com/p/Gatherly-3ce89e537d90803fab3fc9817f689eee?source=copy_link",
+    erd: "https://www.erdcloud.com/d/tiWp65aKvzZFadA33",
   },
 ]
 
@@ -189,7 +192,7 @@ export default function App() {
         <div id="main">
           <section id="one">
             <div className="container">
-              <p className="eyebrow">INTRODUCTION · BACKEND ENGINEERING</p>
+              <p className="eyebrow">INTRODUCTION · BACKEND DEVELOPER</p>
               <h2>Introduction</h2>
               <p className="intro-lead">
                 국경을 넘어 시스템의 안정성을 설계하는
@@ -283,7 +286,7 @@ export default function App() {
               <p className="eyebrow">SELECTED ENGINEERING WORK</p>
               <h2>Portfolio</h2>
               <div className="features">
-                {projects.map((project, index) => (
+                {projects.map((project) => (
                   <article key={project.name}>
                     <a
                       href={project.href}
@@ -296,11 +299,10 @@ export default function App() {
                         src={project.image}
                         alt={`${project.name} 프로젝트`}
                       />
-                      <span className="project-index">0{index + 1}</span>
                     </a>
                     <div className="inner">
                       <p className="project-type">
-                        CASE STUDY · WEB APPLICATION
+                        CASE STUDY · {project.type}
                       </p>
                       <h4>{project.name}</h4>
                       <p>{project.description}</p>
@@ -335,6 +337,10 @@ export default function App() {
                           rel="noreferrer"
                         >
                           Notion Documentation
+                          <span aria-hidden="true">↗</span>
+                        </a>
+                        <a href = {project.erd} target="_blank" rel="noreferrer">
+                          Database ERD
                           <span aria-hidden="true">↗</span>
                         </a>
                       </div>
