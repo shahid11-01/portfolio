@@ -51,7 +51,6 @@ const projects = [
     ],
     notion:
       "https://www.notion.so/Lacheln-35e89e537d9080a8899dea6a0b08486d?source=copy_link",
-     erd: "https://www.erdcloud.com/d/6ARb2m88fqgQ6Zei9",
   },
   {
     name: "My WorkOut",
