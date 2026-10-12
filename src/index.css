@@ -11,11 +11,16 @@
   --olive-14: rgba(65, 92, 17, 0.14);
   --olive-20: rgba(65, 92, 17, 0.2);
   --olive-32: rgba(65, 92, 17, 0.32);
+  --brown: #352720;
+  --canvas: #e8e2da;
+  --surface: #f1ece5;
+  --paper: #f8f5f0;
+  --sidebar-text: #ddd3ca;
   font-family:
     Inter, Pretendard, "Noto Sans KR", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
   color: var(--gray);
-  background: var(--white);
+  background: var(--canvas);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -34,7 +39,8 @@ body {
   min-width: 20rem;
   background:
     linear-gradient(var(--olive-04) 1px, transparent 1px),
-    linear-gradient(90deg, var(--olive-04) 1px, transparent 1px), var(--white);
+    linear-gradient(90deg, var(--olive-04) 1px, transparent 1px),
+    var(--canvas);
   background-size: 3rem 3rem;
   font-size: 1rem;
   line-height: 1.8;
@@ -106,9 +112,9 @@ strong {
   display: flex;
   width: 19rem;
   flex-direction: column;
-  border-right: 1px solid var(--olive-14);
-  background: var(--white);
-  box-shadow: 1.25rem 0 3rem var(--olive-07);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  background: var(--brown);
+  box-shadow: 1.25rem 0 3rem rgba(53, 39, 32, 0.16);
 }
 
 #header header {
@@ -121,7 +127,7 @@ strong {
   height: 6rem;
   margin-bottom: 1.4rem;
   overflow: hidden;
-  border: 0.35rem solid var(--white);
+  border: 0.35rem solid var(--surface);
   border-radius: 1.4rem;
   outline: 1px solid var(--olive-20);
   box-shadow: 0.6rem 0.7rem 0 var(--olive-10);
@@ -135,6 +141,7 @@ strong {
 }
 
 #logo {
+  color: var(--white);
   font-size: 1.28rem;
   font-weight: 800;
   letter-spacing: -0.03em;
@@ -142,7 +149,7 @@ strong {
 
 .sidebar-role {
   margin: 0.55rem 0 0;
-  color: var(--muted);
+  color: #bcaea4;
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.67rem;
   font-weight: 700;
@@ -159,8 +166,8 @@ strong {
   align-items: center;
   min-height: 3.5rem;
   padding: 0.8rem 2.25rem;
-  border-top: 1px solid var(--olive-07);
-  color: var(--muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.09);
+  color: var(--sidebar-text);
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -171,7 +178,7 @@ strong {
 }
 
 #nav li:last-child a {
-  border-bottom: 1px solid var(--olive-07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
 }
 
 #nav a::before {
@@ -179,7 +186,7 @@ strong {
   height: 0.38rem;
   margin-right: 0;
   border-radius: 999rem;
-  background: var(--olive);
+  background: #a8bb83;
   content: "";
   transition:
     width 180ms ease,
@@ -189,8 +196,8 @@ strong {
 #nav a:hover,
 #nav a.active {
   padding-left: 2rem;
-  color: var(--olive);
-  background: var(--olive-04);
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 #nav a.active::before {
@@ -212,9 +219,9 @@ strong {
   width: 2.4rem;
   height: 2.4rem;
   place-items: center;
-  border: 1px solid var(--olive-20);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 0.65rem;
-  color: var(--olive);
+  color: var(--sidebar-text);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.7rem;
   font-weight: 800;
@@ -225,8 +232,8 @@ strong {
 }
 
 .icons a:hover {
-  color: var(--white);
-  background: var(--olive);
+  color: var(--brown);
+  background: var(--sidebar-text);
   transform: translateY(-0.15rem);
 }
 
@@ -327,7 +334,7 @@ strong {
   padding: 1.5rem;
   border-right: 1px solid var(--olive-20);
   border-bottom: 1px solid var(--olive-20);
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(248, 245, 240, 0.82);
   transition:
     background 180ms ease,
     transform 180ms ease;
@@ -335,7 +342,7 @@ strong {
 
 .experience-list article:hover {
   z-index: 1;
-  background: var(--white);
+  background: var(--paper);
   box-shadow: 0 1rem 2.5rem var(--olive-07);
   transform: translateY(-0.18rem);
 }
@@ -363,7 +370,7 @@ strong {
 }
 
 #two {
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.28);
 }
 
 #two h4 {
@@ -387,7 +394,7 @@ strong {
   padding: 1rem;
   border: 1px solid var(--olive-14);
   border-radius: 0.75rem;
-  background: var(--white);
+  background: var(--paper);
   box-shadow: 0 0.3rem 0.9rem var(--olive-04);
   transition:
     border-color 180ms ease,
@@ -456,7 +463,7 @@ strong {
   overflow: hidden;
   border: 1px solid var(--olive-14);
   border-radius: 1rem;
-  background: var(--white);
+  background: var(--paper);
   box-shadow: 0 1rem 3rem var(--olive-07);
   transition:
     border-color 180ms ease,
@@ -495,18 +502,6 @@ strong {
 #three article:hover .image img {
   filter: saturate(1);
   transform: scale(1.025);
-}
-
-.project-index {
-  position: absolute;
-  right: 1.2rem;
-  bottom: 1rem;
-  z-index: 1;
-  color: var(--white);
-  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-  font-size: 2.5rem;
-  font-weight: 800;
-  line-height: 1;
 }
 
 #three .inner {
@@ -623,7 +618,7 @@ strong {
   overflow: hidden;
   border: 1px solid var(--olive-14);
   border-radius: 1rem;
-  background: var(--white);
+  background: var(--paper);
   box-shadow: 0 0.8rem 2.5rem var(--olive-07);
 }
 
@@ -711,7 +706,7 @@ strong {
   padding: 1.4rem;
   border: 1px solid var(--olive-14);
   border-radius: 0.8rem;
-  background: var(--white);
+  background: var(--paper);
   box-shadow: 0 0.6rem 1.5rem var(--olive-04);
 }
 
@@ -758,7 +753,7 @@ strong {
 #footer {
   padding: 1.8rem clamp(2rem, 8vw, 7rem);
   border-top: 1px solid var(--olive-14);
-  background: var(--white);
+  background: var(--surface);
 }
 
 .copyright {
@@ -830,8 +825,8 @@ strong {
     flex-direction: row;
     align-items: center;
     border-right: 0;
-    border-bottom: 1px solid var(--olive-14);
-    box-shadow: 0 0.8rem 2rem var(--olive-07);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0.8rem 2rem rgba(53, 39, 32, 0.16);
   }
 
   #header header {
