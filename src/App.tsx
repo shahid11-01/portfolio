@@ -51,7 +51,7 @@ const projects = [
   {
     name: "My WorkOut",
     href: "https://github.com/shahid11-01/My-WorkOut",
-    image: "myworkoutposter.png",
+    image: "/myworkoutposter.png",
     description:
       "사용자가 개인화된 운동 계획을 수립하고, 일정을 관리하며, 운동 결과를 기록 및 분석할 수 있도록 돕는 웹 애플리케이션입니다.",
     role: "백엔드 및 프론트엔드 개발 · 운동 일정 관리, 결과 분석 피드백, UI/UX",
