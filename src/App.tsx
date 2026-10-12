@@ -1,4 +1,7 @@
 import { useEffect } from "react"
+import lachelnImage from "./lacheln.jpeg"
+import workoutImage from "./myworkoutposter.png"
+import gatherlyImage from "./gatherly-poster.png"
 
 const skills = [
   { name: "Java", mark: "JV", category: "Programming Languages" },
@@ -29,7 +32,7 @@ const projects = [
   {
     name: "Lacheln",
     href: "https://github.com/ZEYHNOS/Lacheln",
-    image: publicImage("lacheln.jpeg"),
+    image: lachelnImage,
     description:
       "캡스톤 디자인 프로젝트입니다. SDM 개별 상품 및 패키지 등록·운영을 위한 파트너 시스템과 장바구니, 결제, 채팅 기능을 갖춘 고객 서비스 플랫폼입니다.",
     role: "백엔드 개발 · 업체 회원가입, Admin, 신고 처리",
@@ -51,7 +54,7 @@ const projects = [
   {
     name: "My WorkOut",
     href: "https://github.com/shahid11-01/My-WorkOut",
-    image: publicImage("myworkoutposter.png"),
+    image: workoutImage,
     description:
       "사용자가 개인화된 운동 계획을 수립하고, 일정을 관리하며, 운동 결과를 기록 및 분석할 수 있도록 돕는 웹 애플리케이션입니다.",
     role: "백엔드 및 프론트엔드 개발 · 운동 일정 관리, 결과 분석 피드백, UI/UX",
@@ -72,7 +75,7 @@ const projects = [
   {
     name: "Gatherly",
     href: "https://github.com/shahid11-01/Gatherly",
-    image: publicImage("gatherly-poster.png"),
+    image: gatherlyImage,
     description:
       "사용자가 쉽게 모임을 생성하고 참여하며, 참여 요청을 관리할 수 있는 커뮤니티 플랫폼입니다.",
     role: "백엔드 및 프론트엔드 개발 · 모임/사용자 관리, 소셜 로그인, JWT, Redis, UI/UX",
