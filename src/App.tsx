@@ -31,11 +31,12 @@ const tools = [
 const projects = [
   {
     name: "Lacheln",
+    type: "WEB APPLICATION",
     href: "https://github.com/ZEYHNOS/Lacheln",
     image: lachelnImage,
     description:
       "캡스톤 디자인 프로젝트입니다. SDM 개별 상품 및 패키지 등록·운영을 위한 파트너 시스템과 장바구니, 결제, 채팅 기능을 갖춘 고객 서비스 플랫폼입니다.",
-    role: "백엔드 개발 · 업체 회원가입, Admin, 신고 처리",
+    role: "백엔드 개발 · 업체 회원가입, 사업자등록번호 유효성 검증, Admin, 신고 처리",
     technologies: [
       "Java",
       "Spring Boot",
@@ -54,6 +55,7 @@ const projects = [
   },
   {
     name: "My WorkOut",
+    type: "WEB APPLICATION",
     href: "https://github.com/shahid11-01/My-WorkOut",
     image: workoutImage,
     description:
@@ -76,6 +78,7 @@ const projects = [
   },
   {
     name: "Gatherly",
+    type: "APPLICATION",
     href: "https://github.com/shahid11-01/Gatherly",
     image: gatherlyImage,
     description:
