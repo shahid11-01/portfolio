@@ -73,7 +73,7 @@ const projects = [
     ],
     notion:
       "https://www.notion.so/My-WorkOut-36489e537d9080129301e4093eb36478?source=copy_link",
-     erd: "https://www.erdcloud.com/d/mb5CQvHpezvajcmN9",
+    erd: "https://www.erdcloud.com/d/mb5CQvHpezvajcmN9",
   },
   {
     name: "Gatherly",
@@ -341,10 +341,12 @@ export default function App() {
                           Notion Documentation
                           <span aria-hidden="true">↗</span>
                         </a>
-                        <a href = {project.erd} target="_blank" rel="noreferrer">
-                          Database ERD
-                          <span aria-hidden="true">↗</span>
-                        </a>
+                        {project.erd && (
+                          <a href={project.erd} target="_blank" rel="noreferrer">
+                            Database ERD
+                            <span aria-hidden="true">↗</span>
+                          </a>
+                        )}
                       </div>
                     </div>
                   </article>
